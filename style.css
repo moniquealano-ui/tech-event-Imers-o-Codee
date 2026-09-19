@@ -17,7 +17,10 @@ body {
     color: var(--cor-textos);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
+   
 }
+
+
 
 /* Header e Navegacao */
 header {
@@ -62,6 +65,22 @@ nav a:hover {
     padding: 6rem 1rem;
     background: linear-gradient(135deg, var(--cor-fundo) 0%, var(--cor-principal) 100%);
     border-bottom: 3px solid var(--cor-secundarias);
+    .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-image: url("inteligencia artificial.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 400px;
+    width: 100%;
+}
+
 }
 
 .banner h2 {
