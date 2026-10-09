@@ -2,250 +2,105 @@
   box-sizing: border-box;
 }
 
-/* Configuração geral do body: fonte, cor de fundo e cor do texto padrão */
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: Arial, sans-serif;
   background-color: #0B1117;
   color: #F1F5F9;
+  text-align: center;
 }
 
-/* Remove a margem padrão dos títulos */
 h1, h2, h3, h4 {
   margin: 0 0 10px;
 }
 
-/* ========================= */
-/* CABEÇALHO */
-/* ========================= */
-
-/* Faixa de topo com o nome do evento, centralizada */
+/* Cabeçalho do evento no centro */
 .evento-header {
-  text-align: center;
-  padding: 80px 20px;
+  padding: 60px 20px;
   background-color: #101820;
 }
 
-/* Título principal (nome do evento) */
 .evento-header h1 {
   font-size: 2.5rem;
   color: #8ECAE6;
 }
 
-/* Subtítulo/descrição abaixo do título */
-.evento-header p {
-  font-size: 1.1rem;
-  color: #F1F5F9;
-}
-
-/* ========================= */
-/* INFORMAÇÕES ADICIONAIS */
-/* ========================= */
-
-/* Seção com data, horário, inscrição e formato */
+/* Sobre o evento as informações todas  */
 .info-adicionais {
-  padding: 60px 20px;
-  text-align: center;
+  padding: 40px 20px;
 }
 
-/* Título da seção "Sobre o evento" */
-.info-adicionais h2 {
+.info-adicionais h2,
+.localizacao h2,
+.patrocinadores h2 {
   color: #8ECAE6;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
-/* Grid que organiza os cards de informação em 4 colunas */
-.info-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-/* Cada cartão individual de informação (Data, Horário, etc.) */
 .info-card {
   background-color: #101820;
   border: 1px solid #3E7C7C;
   border-radius: 8px;
-  padding: 20px;
+  padding: 15px;
+  margin: 0 auto 15px;
+  max-width: 400px;
 }
 
-/* Título de cada card (ex: "📅 Data") */
 .info-card h3 {
   color: #3E7C7C;
-  font-size: 1rem;
 }
 
-/* Texto/valor de cada card */
-.info-card p {
-  font-size: 0.9rem;
-  color: #F1F5F9;
-}
-
-
-/* Seção com endereço e mapa, com fundo diferenciado */
+/* Localização centralizada no meio da pagina */
 .localizacao {
-  padding: 60px 20px;
-  text-align: center;
+  padding: 40px 20px;
   background-color: #101820;
 }
 
-/* Título "Localização" */
-.localizacao h2 {
-  color: #8ECAE6;
-  margin-bottom: 10px;
-}
-
-/* Texto do endereço */
-.localizacao p {
-  margin-bottom: 20px;
-}
-
-/* Container do mapa (iframe), com bordas arredondadas */
-.mapa {
-  max-width: 800px;
-  margin: 0 auto;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-
-/* Seção com a grade de logos dos apoiadores */
+/* Patrocinadores separando de acordo com cada patrocinador  */
 .patrocinadores {
-  padding: 60px 20px;
-  text-align: center;
+  padding: 40px 20px;
 }
 
-/* Título "Patrocinadores" */
-.patrocinadores h2 {
-  color: #8ECAE6;
-  margin-bottom: 30px;
-}
-
-/* Grid flexível que organiza os logos lado a lado, quebrando linha se precisar */
 .patrocinadores-grid {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
-  max-width: 900px;
-  margin: 0 auto;
+  gap: 15px;
 }
 
-/* Cada "caixa" de logo/patrocinador (placeholder tracejado) */
 .patrocinador-item {
   background-color: #101820;
   border: 1px dashed #3E7C7C;
   color: #8ECAE6;
-  width: 160px;
-  height: 90px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 150px;
+  padding: 25px 10px;
   border-radius: 8px;
-  font-size: 0.9rem;
 }
 
-
-
-
-/* Container geral do rodapé, com linha separadora no topo */
-.site-footer {
-  background-color: #101820;
-  padding: 60px 20px 20px;
-  border-top: 1px solid #3E7C7C;
+/* Rodapé da pagina o final */
+.footer-contato,
+.footer-creditos {
+  padding: 20px;
 }
 
-/* Grid que organiza as 3 colunas do rodapé (Contato, Redes, Créditos) */
-.footer-container {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1.5fr;
-  gap: 40px;
-}
-
-/* Título de cada coluna do rodapé */
 .footer-contato h4,
-.footer-social-col h4,
 .footer-creditos h4 {
   color: #8ECAE6;
-  margin-bottom: 15px;
 }
 
-/* Remove marcadores da lista de contatos */
 .footer-contato ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-/* Espaçamento entre cada linha de contato (e-mail, telefone, WhatsApp) */
 .footer-contato li {
-  margin-bottom: 10px;
-  font-size: 0.9rem;
+  margin-bottom: 8px;
 }
 
-/* Alinha os ícones de redes sociais lado a lado */
-.footer-social {
-  display: flex;
-  gap: 12px;
-}
-
-/* Estilo base de cada ícone social (círculo colorido) */
-.social-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background-color: #3E7C7C;
-  color: #F1F5F9;
-  text-decoration: none;
-  transition: background-color 0.2s ease, transform 0.2s ease;
-}
-
-/* Efeito ao passar o mouse sobre o ícone social */
-.social-icon:hover {
-  background-color: #8ECAE6;
-  color: #3E7C7C;
-  transform: scale(1.1);
-}
-
-
-.footer-creditos p {
-  font-size: 0.85rem;
-  line-height: 1.5;
-  color: #F1F5F9;
-}
-
-/* Linha inferior com direitos autorais, separada por borda no topo */
 .footer-bottom {
-  max-width: 1100px;
-  margin: 40px auto 0;
-  padding-top: 20px;
   border-top: 1px solid #3E7C7C;
-  text-align: center;
+  padding: 15px;
   font-size: 0.8rem;
   color: #8ECAE6;
-}
-
-
-/* Telas médias para tablets ou celulares dobraveis  */
-@media (max-width: 768px) {
-  .info-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-  .footer-container {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Telas pequenas para celulares ou outro tipo de aparelho  */
-@media (max-width: 480px) {
-  .info-grid {
-    grid-template-columns: 1fr;
-  }
 }
