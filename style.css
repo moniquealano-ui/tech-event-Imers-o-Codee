@@ -20,7 +20,7 @@ body {
 h1, h2, h3, h4 {
     margin-bottom: 10px;
 }
-/* Cabeçalho do Guilherme */
+                                    /* Cabeçalho do Guilherme */
 header {
     background-color: var(--cor-fundo);
 }
@@ -66,120 +66,177 @@ header {
     font-size: 1.2rem;
     color: var(--cor-textos);
 }
-/* Cabeçalho do evento da Monique */
-.evento-header {
-    padding: 60px 20px;
+/* Cabeçalh Marcio  */
+body {
+    background-color: #0D1B2A;
+    color: #F5F9FC;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+                  
+main {
+    padding: 30px;
+    text-align: center;
+}
+/* Seções */
+section {
+    margin-bottom: 50px;
+}
+/* Títulos das seções */
+h2 {
+    color: #BFDDF3;
+    font-size: 28px;
+}
+/* Textos */
+p {
+    color: #F5F9FC;
+    font-size: 16px;
+    line-height: 1.6;
+}
+/* Organização dos cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+/* Cards */
+.card {
+    background-color: #233958;
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+}
+/* Títulos dos cards */
+.card h3 {
+    color: #BFDDF3;
+}
+/* Texto dentro dos cards */
+.card p {
+    color: #F5F9FC;
+}
+                       /* Cabeçalho Monique */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0B1117;
+    color: white;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    background-color: #101820;
+    padding: 50px 20px;
+}
+
+header h1 {
+    color: #8ECAE6;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* Seções */
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+section h2 {
+    color: #8ECAE6;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+/* Informações do evento */
+section:first-of-type > div {
+    display: inline-block;
+    width: 21%;
+    min-width: 180px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #101820;
+    border: 1px solid #3E7C7C;
+    border-radius: 10px;
+}
+
+section:first-of-type h3 {
+    color: #8ECAE6;
+    margin-top: 5px;
+}
+
+section:first-of-type p {
+    font-size: 15px;
+}
+
+/* Localização */
+section:nth-of-type(2) {
     background-color: #101820;
 }
-.evento-header h2 {
-    font-size: 2.5rem;
-    color: #8ECAE6;
+
+section:nth-of-type(2) p {
+    font-size: 17px;
 }
-.evento-header p {
-    color: var(--cor-textos);
-}
-/* Informações do evento */
-.info-adicionais {
-    padding: 40px 20px;
-}
-.info-adicionais h2,
-.localizacao h2,
-.patrocinadores h2 {
-    color: #8ECAE6;
-    margin-bottom: 20px;
-}
-.info-card {
+
+/* Patrocinadores */
+section:nth-of-type(3) p {
+    display: inline-block;
+    padding: 15px 25px;
+    margin: 8px;
     background-color: #101820;
     border: 1px solid #3E7C7C;
     border-radius: 8px;
-    padding: 15px;
-    margin: 0 auto 15px;
-    max-width: 400px;
-}
-.info-card h3 {
     color: #8ECAE6;
 }
-/* Localização */
-.localizacao {
-    padding: 40px 20px;
-    background-color: #101820;
-}
-/* Patrocinadores */
-.patrocinadores {
-    padding: 40px 20px;
-}
-.patrocinadores-grid {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-.patrocinador-item {
-    background-color: #101820;
-    border: 1px dashed #3E7C7C;
-    color: #8ECAE6;
-    width: 150px;
-    padding: 25px 10px;
-    border-radius: 8px;
-}
+
 /* Rodapé */
-.site-footer {
+footer {
     background-color: #101820;
-    padding: 20px;
-}
-.footer-container {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-.footer-contato,
-.footer-creditos {
-    padding: 20px;
-}
-.footer-contato h4,
-.footer-creditos h4 {
-    color: #8ECAE6;
-}
-.footer-contato ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-.footer-contato li {
-    margin-bottom: 8px;
-}
-.footer-bottom {
+    text-align: center;
+    padding: 35px 20px;
     border-top: 1px solid #3E7C7C;
-    padding: 15px;
-    font-size: 0.8rem;
+}
+
+footer h3 {
     color: #8ECAE6;
+    margin-top: 20px;
 }
-/* Links de navegação, caso sejam adicionados */
-nav a {
-    color: var(--cor-textos);
+
+footer p {
+    font-size: 14px;
+}
+
+footer a {
+    color: #8ECAE6;
     text-decoration: none;
-    margin-left: 2rem;
-    font-size: 1rem;
-    transition: color 0.3s ease;
 }
-nav a:hover {
-    color: var(--cor-secundarias);
+
+footer a:hover {
+    text-decoration: underline;
 }
-/* Responsividade */
-@media (max-width: 768px) {
-    .cabecalho {
-        flex-direction: column;
-        gap: 1rem;
+
+/* Celular */
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 32px;
     }
-    nav a {
-        margin: 0 0.8rem;
+
+    section:first-of-type > div {
+        display: block;
+        width: 90%;
+        margin: 15px auto;
     }
-    .banner h2 {
-        font-size: 2rem;
-    }
-    .evento-header h2 {
-        font-size: 2rem;
-    }
-    .patrocinadores-grid {
-        align-items: center;
+
+    section h2 {
+        font-size: 24px;
     }
 }
